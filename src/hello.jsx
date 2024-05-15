@@ -1,9 +1,17 @@
-import React from "react";
+import {React, useState} from "react";
 
 function Hello() {
+
+const [heading, setHeading] = useState("Magnificent Monkeys");
+
+function clickHandler() {
+    setHeading("Radical Rhinos")
+}
+
   return (
     <>
-      <h1>Hello buttface</h1>
+    <button type="button" onClick={clickHandler}>Click me! </button>
+      <h1>{heading}</h1>
     </>
   );
 }
