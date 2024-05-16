@@ -6,8 +6,14 @@ const RenderName = (props) => {
 };
 
 RenderName.propTypes = {
-    name: PropTypes.string.isRequired,
+    name: PropTypes.string,
 };
+
+RenderName.defaultProps = {
+    name: 'Kevin'
+}
+
+
 // Here we're indicating that not only is name a required prop for this component, but it must be a string
 // If we try to render this component with eith a missing or non-string prop for name, we'll get a helpful error message. 
 // Great for debugging (And avoiding bugs in the first place)
