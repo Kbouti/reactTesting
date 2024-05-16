@@ -1,4 +1,8 @@
 import { describe, it, expect } from 'vitest';
+import {render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import Hello from "./hello.jsx";
+
 
 // describe(`something truthy and falsy`, () => {
 //     it(`true to be true`, () => {
@@ -12,9 +16,6 @@ import { describe, it, expect } from 'vitest';
 
 
 
-import {render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import Hello from "./hello.jsx";
 
 describe("Hello component", () => {
     it("renders Magnificent Monkeys", () => {
