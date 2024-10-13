@@ -5,7 +5,8 @@ exports[`Hello component > renders Magnificent Monkeys 1`] = `
   <button
     type="button"
   >
-    Click me! 
+    Click me!
+     
   </button>
   <h1>
     Magnificent Monkeys
